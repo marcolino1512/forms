@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login__content">
+            <img src="Img/Fundo.jpg" alt="Fundo-imagem" class="login__img">
+            <form action="" class="login__form" id="login-form" novalidate>
+                <div>
+                    <h1 class="login__title"><span>Bem-Vindo</span></h1>
+                    <p class="login__descricao">Entre com sua conta</p>
+                </div>
+
+                <p class="login__error" id="login-error"></p>
+                <p class="login__success" id="login-success"></p>
+
+                <div>
+                    <div class="login__inputs">
+                        <div>
+                            <label for="input-email" class="login__label">Email</label>
+                            <input type="email" placeholder="Entre com seu email" required class="login__input" id="input-email" name="email">
+                        </div>
+                        <div>
+                            <label for="input-pass" class="login__label">Senha</label>
+                            <div class="login__box">
+                                <input type="password" placeholder="Entre com a senha" required class="login__input" id="input-pass" name="senha" minlength="6">
+                                <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login__check">
+                        <input type="checkbox" class="login__check-input" id="input-check" name="lembrar">
+                        <label for="input-check" class="login__check-label">Lembre-me</label>
+                    </div>
+                    <div>
+                        <div class="login__buttons">
+                            <button class="login__button" type="submit" id="login-submit">Logar</button>
+                            <a class="login__button login__button-ghost" href="cadastro.html">Cadastro</a>
+                        </div>
+                        <p class="login__switch">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="ui.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
